@@ -49,7 +49,7 @@ const appPages: AppPage[] = [
     icon: nutrition
   },
   {
-    title: 'Mercado',
+    title: 'Mercados',
     url: '/mercados',
     icon: cart
   },
