@@ -8,6 +8,7 @@ import Menu from './components/Menu';
 import Home from './pages/Home';
 import List from './pages/List';
 import Activity from './pages/ActivityList';
+import Login from './pages/Login';
 import { home, list } from 'ionicons/icons';
 
 /* Core CSS required for Ionic components to work properly */
@@ -56,6 +57,7 @@ const App: React.FC = () => (
           <Route path="/home" component={Home} exact={true} />
           <Route path="/home/list" component={List} exact={true} />
           <Route path="/activities" component={Activity} exact={true} />
+          <Route path="/login" component={Login} exact={true} />
           <Route path="/" render={() => <Redirect to="/activities" exact={true} /> } />
         </IonRouterOutlet>
       </IonSplitPane>
