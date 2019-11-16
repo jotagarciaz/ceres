@@ -15,7 +15,8 @@ const Login: React.FC<LoginProps> = ({history}) => {
   const [usernameError, setUsernameError] = useState(false);
   const [passwordError, setPasswordError] = useState(false);
   const [hasMatch,setHasMatch] = useState(false);
-
+  
+  
   const login = async (e: React.FormEvent) => {
     e.preventDefault();
     setFormSubmitted(true);
@@ -38,6 +39,7 @@ const Login: React.FC<LoginProps> = ({history}) => {
           }
       }
       if (hasMatch){
+        window.localStorage.setItem('currentUser',username);
         history.push('/mercados', {direction: '/mercados'});
       }
       
