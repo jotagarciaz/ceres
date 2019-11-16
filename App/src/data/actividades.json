@@ -1,0 +1,38 @@
+[
+  {
+    "Nombre" : "El Sable Equitación",
+    "Imagen" : "/img/Actividades/sable.jpg",
+    "Localizacion" : "Laredo",
+    "Precio" : "12€ la hora"
+  },
+  {
+    "Nombre" : "Ruta Faro del Caballo",
+    "Imagen" : "/img/Actividades/faroCaballo.jpg",
+    "Localizacion" : "Santoña",
+    "Precio" : "Gratis"
+  },
+  {
+    "Nombre" : "Curso de elaboración de pan artesano",
+    "Imagen" : "/img/Actividades/pan.jpg",
+    "Localizacion" : "Santander",
+    "Precio" : "50€"
+  },
+  {
+    "Nombre" : "Taller de Sobaos Pasiegos",
+    "Imagen" : "/img/Actividades/sobao.jpg",
+    "Localizacion" : "Selaya",
+    "Precio" : "20€"
+  },
+  {
+    "Nombre" : "Visita Ganadería Cudaña",
+    "Imagen" : "/img/Actividades/granja.png",
+    "Localizacion" : "Labarces",
+    "Precio" : "10€"
+  },
+  {
+    "Nombre" : "Taller de queso",
+    "Imagen" : "/img/Actividades/queso.jpg",
+    "Localizacion" : "Labarces",
+    "Precio" : "12€"
+  }
+]
