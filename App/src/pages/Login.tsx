@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { IonImg, IonHeader, IonToolbar, IonTitle, IonContent, IonPage, IonButtons, IonMenuButton, IonRow,IonGrid, IonCol, IonButton, IonList, IonItem, IonLabel, IonInput, IonText } from '@ionic/react';
 import { RouteComponentProps } from 'react-router';
-
+import usuarios from '../data/usuarios.json';
 interface OwnProps extends RouteComponentProps {}
 
 
@@ -14,7 +14,9 @@ const Login: React.FC<LoginProps> = ({history}) => {
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [usernameError, setUsernameError] = useState(false);
   const [passwordError, setPasswordError] = useState(false);
-
+  const [hasMatch,setHasMatch] = useState(false);
+  
+  
   const login = async (e: React.FormEvent) => {
     e.preventDefault();
     setFormSubmitted(true);
@@ -27,7 +29,20 @@ const Login: React.FC<LoginProps> = ({history}) => {
     
 
     if(username && password) {
-      history.push('/tabs/schedule', {direction: 'none'});
+      for (var index = 0; index < usuarios.length; ++index) {
+
+          var user = usuarios[index];
+
+          if(user.Email === username && user.Contrasenha === password ){
+            setHasMatch(true);
+            break;
+          }
+      }
+      if (hasMatch){
+        window.localStorage.setItem('currentUser',username);
+        history.push('/mercados', {direction: '/mercados'});
+      }
+      
     }
   };
 
@@ -54,6 +69,11 @@ const Login: React.FC<LoginProps> = ({history}) => {
 
         <form noValidate onSubmit={login}>
           <IonList>
+            {formSubmitted && !hasMatch && <IonText color="danger">
+              <p className="ion-padding-start">
+                Los datos no son validos.
+              </p>
+            </IonText>}
             <IonItem>
               <IonLabel position="stacked" color="primary">Nombre usuario</IonLabel>
               <IonInput name="username" type="text" value={username} spellCheck={false} autocapitalize="off" onIonChange={(e: { detail: { value: any; }; }) => setUsername(e.detail.value!)}
@@ -78,6 +98,7 @@ const Login: React.FC<LoginProps> = ({history}) => {
                 Se requiere contraseña
               </p>
             </IonText>}
+
           </IonList>
 
           <IonRow>

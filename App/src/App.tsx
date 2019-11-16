@@ -10,10 +10,10 @@ import RegistroUsuario from './pages/RegistroUsuario'
 import Menu from './components/Menu';
 import Home from './pages/Home';
 import List from './pages/List';
-import Actividades from './pages/ActivityList';
-import Mercados from './pages/MercadoList';
-import Tiendas from './pages/TiendasList';
-import Alimentacion from './pages/AlimentacionList';
+import ActivityList from './pages/ActivityList';
+import MercadoList from './pages/MercadoList';
+import TiendasList from './pages/TiendasList';
+import AlimentacionList from './pages/AlimentacionList';
 import { home, list, basket, basketball, cart, nutrition } from 'ionicons/icons';
 
 
@@ -64,18 +64,23 @@ const appPages: AppPage[] = [
   }
 ];
 
+const user = () => {
+  return window.localStorage.getItem('currentUser');
+};
+
 const App: React.FC = () => (
   <IonApp>
     <IonReactRouter>
       <IonSplitPane contentId="main">
-        <Menu appPages={appPages} />
+        <Menu appPages={appPages} user={user()}/>
         <IonRouterOutlet id="main">
           <Route path="/home" component={Home} exact={true} />
-          <Route path="/tiendas" component={Tiendas} exact={true} />
-          <Route path="/activities" component={Actividades} exact={true} />
-          <Route path="/mercados" component={Mercados} exact={true} />
-          <Route path="/alimentacion" component={Alimentacion} exact={true} />
-          <Route path="/login" component={Login} exact={true} />
+          <Route path="/tiendas" component={TiendasList} exact={true} />
+          <Route path="/activities" component={ActivityList} exact={true} />
+          <Route path="/mercados" component={MercadoList} exact={true} />
+          <Route path="/alimentacion" component={AlimentacionList} exact={true} />
+          
+          <Route path="/login" component={Login} exact={true} /> 
           <Route path="/regUsr" component={RegistroUsuario} exact={true} />
           <Route path="/" render={() => <Redirect to="/home" exact={true} /> } />
         </IonRouterOutlet>

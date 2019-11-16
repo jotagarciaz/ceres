@@ -51,19 +51,28 @@ const ListItems = () => {
   const items = mercadillos.map((mercadillo,i) => {
     return (
       <IonItem key={i} className="mercados">
-
-          <IonAvatar slot="start" className="img">
-              <img src={mercadillo.Imagen} alt={mercadillo.Nombre}/>
-          </IonAvatar>
-
-            <IonLabel>{mercadillo.Nombre}</IonLabel>
-            <IonChip>
-                <IonIcon icon="close"/>
+        <IonGrid>
+            <IonRow>
+              <IonCol size = "1">
+                <IonAvatar className="IonImg">
+                  <IonImg src={mercadillo.Imagen} alt={mercadillo.Nombre}></IonImg>
+                </IonAvatar>
+              </IonCol>
+              <IonCol size = "4">
+                <IonLabel>{mercadillo.Nombre} ({mercadillo.Tipo})</IonLabel>
+                <IonChip>
+                    <IonIcon icon="close"/>
                 <IonLabel>{mercadillo.Tipo}</IonLabel>
             </IonChip>
-        
-          Horario: {mercadillo.HoraIni} - {mercadillo.HoraFin}
-
+              </IonCol>
+              <IonCol size = "4">
+                <IonLabel>{mercadillo.Lugar}</IonLabel>
+              </IonCol>
+              <IonCol size = "3">
+                {mercadillo.Fecha} de {mercadillo.HoraIni} - {mercadillo.HoraFin}
+              </IonCol>
+            </IonRow>
+          </IonGrid>
       </IonItem>
     );
   });

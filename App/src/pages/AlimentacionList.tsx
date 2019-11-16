@@ -10,19 +10,10 @@ const ListPage: React.FC = () => {
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <IonButtons>
+          <IonButtons slot="start">
             <IonMenuButton />
-            <IonGrid>
-              <IonRow align-items-right>
-                <IonCol>
-                  <IonTitle>Alimentación</IonTitle>
-                </IonCol>
-                <IonCol size = '1'>
-                  <IonImg src = "/img/logo.svg" alt = ''></IonImg>
-                </IonCol>
-              </IonRow>
-            </IonGrid>
           </IonButtons>
+          <IonTitle>List</IonTitle>
         </IonToolbar>
       </IonHeader>
 

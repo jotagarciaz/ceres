@@ -13,25 +13,44 @@ import {
   IonMenu,
   IonMenuToggle,
   IonTitle,
-  IonToolbar
+  IonToolbar,
+  IonAvatar,
+  IonImg
 } from '@ionic/react';
 import React from 'react';
 import { RouteComponentProps, withRouter } from 'react-router-dom';
 import { AppPage } from '../declarations';
+import "./Menu.css";
 
 interface MenuProps extends RouteComponentProps {
   appPages: AppPage[];
+  user :string|null;
 }
 
-const Menu: React.FunctionComponent<MenuProps> = ({ appPages }) => (
+const logout = () =>{
+  window.localStorage.clear()
+}
+
+const Menu: React.FunctionComponent<MenuProps> = ({ appPages , user}) => (
   <IonMenu contentId="main" type="overlay">
     <IonHeader>
       <IonToolbar>
         <IonTitle>Menú</IonTitle>
+        { window.localStorage.length > 0 
+        &&<IonRow slot="end" >
+                    <IonCol >
+                    <IonAvatar align-items-right>
+                          <IonImg id="srredondo" src="/assets/sr_redondo.png" />
+                    </IonAvatar>
+                    <IonLabel>{user}</IonLabel>
+                    </IonCol>
+                </IonRow>}
       </IonToolbar>
+    
     </IonHeader>
     <IonContent>
-        <IonGrid>
+      {window.localStorage.length == 0 
+        &&<IonGrid>
             <IonMenuToggle key={1} autoHide={false}>
                 <IonRow>
                     <IonCol>
@@ -46,8 +65,21 @@ const Menu: React.FunctionComponent<MenuProps> = ({ appPages }) => (
                     </IonCol>
                 </IonRow>
             </IonMenuToggle>
-
       </IonGrid>
+      }{localStorage.length > 0 
+        &&<IonGrid>
+            <IonMenuToggle key={1} autoHide={false}>
+                <IonRow>
+                    <IonCol>
+                        <IonItem onClick={logout} routerLink={"#"} routerDirection="none">
+                            <IonLabel>{"Cerrar sesión"}</IonLabel>
+                        </IonItem>
+                    </IonCol>
+                    
+                </IonRow>
+            </IonMenuToggle>
+      </IonGrid>
+      }
       <IonList>
         {appPages.map((appPage, index) => {
           return (

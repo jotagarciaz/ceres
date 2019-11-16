@@ -1,6 +1,7 @@
 [
   {
     "Nombre": "Marina",
+    "Email": "marina@email.com",
     "Contrasenha": "12345",
     "Tipo": "Usuario"
   },
