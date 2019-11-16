@@ -14,7 +14,6 @@ const AwesomeList: React.FC = () => {
       </IonHeader>
 
       <IonContent>
-        <ListItems />
       </IonContent>
     </IonPage>
   );
