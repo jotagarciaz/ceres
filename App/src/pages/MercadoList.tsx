@@ -15,7 +15,7 @@ const ListPage: React.FC = () => {
             <IonGrid>
               <IonRow align-items-right>
                 <IonCol>
-                  <h1 >Mercados</h1>
+                  <IonTitle>Mercados</IonTitle>
                 </IonCol>
                 <IonCol size = '1'>
                   <IonImg src = "/img/logo.svg" alt = ''></IonImg>
@@ -47,13 +47,21 @@ const ListItems = () => {
                     </IonAvatar>
                 </IonCol>
                 <IonCol size = "3">
-                    <IonLabel text-center>{mercadillo.Nombre}</IonLabel>
-                    <IonChip>
-                        <IonItem color="grey">
-                            <IonIcon slot="start" icon={pricetag}/>
+                    <IonLabel>{mercadillo.Nombre}</IonLabel>
+                        {mercadillo.Tipo === "Generalista"
+                        && <IonChip><IonItem color="default">
+                          <IonIcon slot="start" icon={pricetag}/>
                             <IonLabel>{mercadillo.Tipo}</IonLabel>
                         </IonItem>
-                    </IonChip>
+                        </IonChip>}
+                         {mercadillo.Tipo === "Ecológico"
+                        && <IonChip color='success'><IonItem color='success'>
+                        <IonIcon slot="start" icon={pricetag}/>
+                          <IonLabel>{mercadillo.Tipo}</IonLabel>
+                      </IonItem>
+                      </IonChip>}
+                            
+                    
                 </IonCol>
                 <IonCol size = "4">
                     <IonLabel>{mercadillo.Lugar}</IonLabel>
@@ -61,9 +69,8 @@ const ListItems = () => {
                 <IonCol size = "3">
                     {mercadillo.Fecha} de {mercadillo.HoraIni} - {mercadillo.HoraFin}
                 </IonCol>
-
             </IonRow>
-          </IonGrid>
+        </IonGrid>
       </IonItem>
     );
   });
