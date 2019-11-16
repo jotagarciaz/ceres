@@ -18,7 +18,9 @@ const Login: React.FC<LoginProps> = ({history}) => {
   
   
   const login = async (e: React.FormEvent) => {
+    console.log("entrando")
     e.preventDefault();
+    
     setFormSubmitted(true);
     if(!username) {
       setUsernameError(true);
@@ -27,20 +29,33 @@ const Login: React.FC<LoginProps> = ({history}) => {
       setPasswordError(true);
     }
     
-
+    let tipo = "";
+    let hasMatch = false;
     if(username && password) {
       for (var index = 0; index < usuarios.length; ++index) {
 
           var user = usuarios[index];
 
           if(user.Email === username && user.Contrasenha === password ){
-            setHasMatch(true);
+            hasMatch=true;
+            tipo = user.Tipo;
             break;
           }
       }
+      console.log("entrando2")
+
       if (hasMatch){
+        console.log("entrando3")
+
         window.localStorage.setItem('currentUser',username);
-        history.push('/mercados', {direction: '/mercados'});
+        window.localStorage.setItem('tipo', tipo);
+    
+       
+        if(tipo === "Empresa"){
+          history.push('/empresa', {direction: '/empresa'});
+        }else{
+          history.push('/usuario', {direction: '/usuario'});
+        }
       }
       
     }
