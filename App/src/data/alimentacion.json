@@ -23,5 +23,15 @@
     "Nombre" : "NaranjasECO",
     "Imagen" : "/img/Alimentacion/naranjas.png",
     "Url" : "http://frutasyverdurasecologicasen.naranjaseco.com/ampuero-cantabria"
+  },
+  {
+    "Nombre" : "Sabores del Campo",
+    "Imagen" : "/img/Tiendas/sabores.jpg",
+    "Url" : "/"
+  },
+  {
+    "Nombre" : "D-Cantabria",
+    "Imagen" : "/img/Tiendas/dcantabria.jpg",
+    "Url" : "https://www.dcantabria.es/"
   }
 ]

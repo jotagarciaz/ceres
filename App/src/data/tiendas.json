@@ -1,0 +1,27 @@
+[
+  {
+    "Nombre" : "El Tarugu",
+    "Imagen" : "/img/Tiendas/tarugu.png",
+    "Url" : "https://www.productostipicoscantabria.com/"
+  },
+  {
+    "Nombre" : "Cantabria Tradicional",
+    "Imagen" : "/img/Tiendas/cantradicional.jpg",
+    "Url" : "/"
+  },
+  {
+    "Nombre": "La Salud BIO",
+    "Imagen": "/img/Tiendas/salud.png",
+    "Url": "/"
+  },
+  {
+    "Nombre": "Torneo Artesano",
+    "Imagen": "/img/Tiendas/postigo.jpg",
+    "Url": "https://leandropostigo.wixsite.com/torneroartesano/nosotros"
+  },
+  {
+    "Nombre": "Restauraciones Monasterio",
+    "Imagen": "/img/Tiendas/restauraciones.png",
+    "Url": "https://www.restauracionesmonasterio.es/es/"
+  }
+]

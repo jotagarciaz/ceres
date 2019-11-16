@@ -1,0 +1,13 @@
+.tiendas {
+    height: 15vh;
+}
+
+.tiendas .img  {
+    width:10vh !important;
+    height : 10vh !important;
+
+    }
+.tiendas a {
+        color: black;
+        text-decoration: none;
+    }
