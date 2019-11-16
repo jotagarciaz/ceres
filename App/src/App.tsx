@@ -4,6 +4,8 @@ import { IonApp, IonRouterOutlet, IonSplitPane } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
 import { AppPage } from './declarations';
 
+import Login from './pages/Login';
+
 import Menu from './components/Menu';
 import Home from './pages/Home';
 import List from './pages/List';
@@ -12,6 +14,7 @@ import Mercados from './pages/MercadoList';
 import Tiendas from './pages/TiendasList';
 import Alimentacion from './pages/AlimentacionList';
 import { home, list, basket, basketball, cart, nutrition } from 'ionicons/icons';
+
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -49,8 +52,8 @@ const appPages: AppPage[] = [
     icon: nutrition
   },
   {
-    title: 'Mercados',
-    url: '/mercados',
+    title: 'Mercado',
+    url: '/home',
     icon: cart
   },
   {
@@ -69,8 +72,9 @@ const App: React.FC = () => (
           <Route path="/home" component={Home} exact={true} />
           <Route path="/tiendas" component={Tiendas} exact={true} />
           <Route path="/activities" component={Actividades} exact={true} />
-          <Route path="/mercados" component={Mercados} exact={true} />
+          <Route path="/home" component={Mercados} exact={true} />
           <Route path="/alimentacion" component={Alimentacion} exact={true} />
+          <Route path="/login" component={Login} exact={true} />
           <Route path="/" render={() => <Redirect to="/activities" exact={true} /> } />
         </IonRouterOutlet>
       </IonSplitPane>
