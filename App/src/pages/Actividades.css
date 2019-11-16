@@ -1,5 +1,5 @@
 .actividades {
-    height: 15vh;
+    height: 10vh;
 }
 
 .actividades .img  {
@@ -11,3 +11,6 @@
         color: black;
         text-decoration: none;
     }
+h1 {
+  padding-left: 80px;
+}

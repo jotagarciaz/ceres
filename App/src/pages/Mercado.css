@@ -1,9 +1,19 @@
 .mercados {
-    height: 15vh;
+    height: 10vh;
 }
 
 .mercados .img  {     
     width:10vh !important;  
     height : 10vh !important;  
-        
+
     }
+
+.mercados p {
+        display: flex;
+        margin:auto;
+        text-align:center;
+    }
+
+h1 {
+  padding-left: 80px;
+}
