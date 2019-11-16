@@ -15,7 +15,7 @@ const ListPage: React.FC = () => {
             <IonGrid>
               <IonRow align-items-right>
                 <IonCol>
-                  <IonTitle>Mercados</IonTitle>
+                  <h1>Mercados</h1>
                 </IonCol>
                 <IonCol size = '1'>
                   <IonImg src = "/img/logo.svg" alt = ''></IonImg>
@@ -48,19 +48,13 @@ const ListItems = () => {
                 </IonCol>
                 <IonCol size = "3">
 
-                    <IonLabel >{mercadillo.Nombre}</IonLabel>
-                    <IonChip>
-                        <IonItem color="grey">
+                    <IonLabel>{mercadillo.Nombre}</IonLabel>
+                        <IonChip>
+                          <IonItem color='default'>
                             <IonIcon slot="start" icon={pricetag}/>
                             <IonLabel>{mercadillo.Tipo}</IonLabel>
                         </IonItem>
-                        </IonChip>}
-                         {mercadillo.Tipo === "Ecológico"
-                        && <IonChip color='success'><IonItem color='success'>
-                        <IonIcon slot="start" icon={pricetag}/>
-                          <IonLabel>{mercadillo.Tipo}</IonLabel>
-                      </IonItem>
-                      </IonChip>}
+                      </IonChip>
                             
                     
                 </IonCol>
