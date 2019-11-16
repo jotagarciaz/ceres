@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { IonImg, IonHeader, IonToolbar, IonTitle, IonContent, IonPage, IonButtons, IonMenuButton, IonRow, IonCol, IonButton, IonList, IonItem, IonLabel, IonInput, IonText } from '@ionic/react';
+import { IonImg, IonHeader, IonToolbar, IonTitle, IonContent, IonPage, IonButtons, IonMenuButton, IonRow,IonGrid, IonCol, IonButton, IonList, IonItem, IonLabel, IonInput, IonText } from '@ionic/react';
 import { RouteComponentProps } from 'react-router';
 
 interface OwnProps extends RouteComponentProps {}
@@ -9,7 +9,7 @@ interface LoginProps extends OwnProps { }
 
 const Login: React.FC<LoginProps> = ({history}) => {
 
-  const [username, setUsername] = useState('');
+  const [username, setUsername] = useState('');  
   const [password, setPassword] = useState('');
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [usernameError, setUsernameError] = useState(false);
@@ -34,10 +34,19 @@ const Login: React.FC<LoginProps> = ({history}) => {
     <IonPage id="login-page">
       <IonHeader>
         <IonToolbar>
-          <IonButtons slot="start">
-            <IonMenuButton></IonMenuButton>
+          <IonButtons>
+            <IonMenuButton />
+            <IonGrid>
+              <IonRow align-items-right>
+                <IonCol>
+                  <IonTitle>Login</IonTitle>
+                </IonCol>
+                <IonCol size = '1'>
+                  <IonImg src = "/img/logo.svg" alt = ''></IonImg>
+                </IonCol>
+              </IonRow>
+            </IonGrid>
           </IonButtons>
-          <IonTitle>Login</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent>
