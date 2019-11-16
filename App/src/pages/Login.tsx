@@ -21,22 +21,23 @@ const Login: React.FC<LoginProps> = ({history}) => {
     e.preventDefault();
     
     setFormSubmitted(true);
-    if(!username) {
+    if(!username || username === "") {
       setUsernameError(true);
     }
-    if(!password) {
+    if(!password || password === "") {
       setPasswordError(true);
     }
     
     let tipo = "";
     let hasMatch = false;
-    if(username && password) {
+    if(username && password && username !=="" && password !=="") {
       for (var index = 0; index < usuarios.length; ++index) {
 
           var user = usuarios[index];
 
           if(user.Email === username && user.Contrasenha === password ){
             hasMatch=true;
+            setFormSubmitted(false)
             tipo = user.Tipo;
             break;
           }
@@ -46,7 +47,8 @@ const Login: React.FC<LoginProps> = ({history}) => {
 
         window.localStorage.setItem('currentUser',username);
         window.localStorage.setItem('tipo', tipo);
-    
+        setUsername("")
+        setPassword("")
        
         if(tipo === "Empresa"){
           history.push('/empresa', {direction: '/empresa'});
@@ -81,11 +83,12 @@ const Login: React.FC<LoginProps> = ({history}) => {
 
         <form noValidate onSubmit={login}>
           <IonList>
-            {formSubmitted && !hasMatch && <IonText color="danger">
+            {formSubmitted && !hasMatch &&<IonText color="danger">
               <p className="ion-padding-start">
                 Los datos no son validos.
               </p>
-            </IonText>}
+            </IonText>
+            }
             <IonItem>
               <IonLabel position="stacked" color="primary">Nombre usuario</IonLabel>
               <IonInput name="username" type="text" value={username} spellCheck={false} autocapitalize="off" onIonChange={(e: { detail: { value: any; }; }) => setUsername(e.detail.value!)}
