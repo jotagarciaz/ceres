@@ -19,7 +19,8 @@ import {
     IonRow,
     IonGrid,
     IonCol,
-    IonImg
+    IonImg,
+    IonButton
     } from '@ionic/react';
   import { book, build, colorFill, grid } from 'ionicons/icons';
   import React from 'react';
@@ -61,6 +62,12 @@ import {
               </p>
             </IonCardContent>
           </IonCard>
+
+          <IonRow>
+            <IonCol>
+              <IonButton routerLink="/publicarOferta" type="submit" expand="block">Publicar Oferta</IonButton>
+            </IonCol>
+          </IonRow>
   
         </IonContent>
       </IonPage>

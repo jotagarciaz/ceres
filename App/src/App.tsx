@@ -16,6 +16,7 @@ import ActivityList from './pages/ActivityList';
 import MercadoList from './pages/MercadoList';
 import TiendasList from './pages/TiendasList';
 import AlimentacionList from './pages/AlimentacionList';
+import Oferta from './pages/PublicarOferta'
 import { home, list, basket, basketball, cart, nutrition } from 'ionicons/icons';
 
 
@@ -88,6 +89,7 @@ const App: React.FC = () => (
           <Route path="/usuario" routerLink={"/usuario"} routerDirection="none" component={Usuario} exact={true} />  
           <Route path="/login" component={Login} exact={true} /> 
           <Route path="/regUsr" component={RegistroUsuario} exact={true} />
+          <Route path="/publicarOferta" component={Oferta} exact={true} />
           <Route path="/" render={() => <Redirect to="/home" exact={true} /> } />
          
         </IonRouterOutlet>

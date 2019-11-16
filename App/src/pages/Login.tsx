@@ -18,7 +18,6 @@ const Login: React.FC<LoginProps> = ({history}) => {
   
   
   const login = async (e: React.FormEvent) => {
-
     e.preventDefault();
     
     setFormSubmitted(true);
@@ -42,10 +41,8 @@ const Login: React.FC<LoginProps> = ({history}) => {
             break;
           }
       }
-      
 
       if (hasMatch){
-        
 
         window.localStorage.setItem('currentUser',username);
         window.localStorage.setItem('tipo', tipo);
