@@ -1,4 +1,4 @@
-import { IonButtons, IonContent, IonHeader, IonIcon, IonItem, IonList, IonMenuButton, IonPage, IonTitle, IonToolbar, IonAvatar,IonGrid,IonRow,IonCol, IonImg, IonLabel, IonChip } from '@ionic/react';
+import { IonButtons, IonContent, IonHeader, IonIcon, IonItem, IonList, IonMenuButton, IonPage, IonTitle, IonToolbar, IonAvatar,IonGrid,IonRow,IonCol, IonImg, IonLabel, IonChip, IonButton } from '@ionic/react';
 import {thumbsUp,thumbsDown } from 'ionicons/icons';
 import activities from '../data/actividades.json';
 import React from 'react';
@@ -43,7 +43,7 @@ const ListItems = () => {
 
   const items = activities.map((actividad,i) => {
     return (
-      <IonItem key={i} className="actividades">
+      <IonItem key={i} className="actividades" >
 
         <IonGrid>
           <IonRow>
@@ -58,8 +58,10 @@ const ListItems = () => {
             <IonCol size = "3">
               { window.localStorage.getItem('tipo') === "Usuario"
                 &&<IonRow>
-                <IonCol size="2">
-                  <IonIcon icon={thumbsDown} />
+                <IonCol size="2" >
+                 
+                   <IonIcon icon={thumbsDown} />
+
                 </IonCol>
                 <IonCol size="2">
                   <IonLabel>{actividad.Valoracion}</IonLabel>

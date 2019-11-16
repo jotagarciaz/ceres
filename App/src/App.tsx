@@ -40,6 +40,11 @@ import './theme/variables.css';
 
 const appPages: AppPage[] = [
   {
+    title: 'Bienvenida',
+    url: '/empresa',
+    icon: basket
+  },
+  {
     title: 'Home',
     url: '/home',
     icon: home

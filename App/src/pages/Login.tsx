@@ -18,7 +18,7 @@ const Login: React.FC<LoginProps> = ({history}) => {
   
   
   const login = async (e: React.FormEvent) => {
-    console.log("entrando")
+
     e.preventDefault();
     
     setFormSubmitted(true);

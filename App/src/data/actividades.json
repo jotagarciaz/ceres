@@ -4,7 +4,7 @@
     "Imagen" : "/img/Actividades/sable.jpg",
     "Localizacion" : "Laredo",
     "Precio" : "12€ la hora",
-    "Valoracion": "5",
+    "Valoracion": 5,
     "Etiqueta":"Al aire libre"
   },
   {
@@ -12,7 +12,7 @@
     "Imagen" : "/img/Actividades/faroCaballo.jpg",
     "Localizacion" : "Santoña",
     "Precio" : "Gratis",
-    "Valoracion": "4",
+    "Valoracion": 4,
     "Etiqueta":"Senderismo"
   },
   {
@@ -20,7 +20,7 @@
     "Imagen" : "/img/Actividades/pan.jpg",
     "Localizacion" : "Santander",
     "Precio" : "50€",
-    "Valoracion": "3",
+    "Valoracion": 3,
     "Etiqueta":"Gastronómico"
   },
   {
@@ -28,7 +28,7 @@
     "Imagen" : "/img/Actividades/sobao.jpg",
     "Localizacion" : "Selaya",
     "Precio" : "20€",
-    "Valoracion": "4",
+    "Valoracion": 4,
     "Etiqueta":"Gastronómico"
   },
   {
@@ -36,7 +36,7 @@
     "Imagen" : "/img/Actividades/granja.png",
     "Localizacion" : "Labarces",
     "Precio" : "10€",
-    "Valoracion": "2",
+    "Valoracion": 2,
     "Etiqueta":"Al aire libre"
   },
   {
@@ -44,7 +44,7 @@
     "Imagen" : "/img/Actividades/queso.jpg",
     "Localizacion" : "Labarces",
     "Precio" : "12€",
-    "Valoracion": "3",
+    "Valoracion": 3,
     "Etiqueta":"Gastronómico"
   }
 ]
