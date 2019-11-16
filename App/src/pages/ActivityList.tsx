@@ -17,7 +17,7 @@ const ListPage: React.FC = () => {
             <IonGrid>
               <IonRow align-items-right>
                 <IonCol>
-                  <IonTitle>Actividades</IonTitle>
+                  <h1>Actividades</h1>
                 </IonCol>
                 <IonCol size = '1'>
                   <IonImg src = "/img/logo.svg" alt = ''></IonImg>

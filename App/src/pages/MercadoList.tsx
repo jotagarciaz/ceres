@@ -47,13 +47,9 @@ const ListItems = () => {
                     </IonAvatar>
                 </IonCol>
                 <IonCol size = "3">
-                    <IonLabel>{mercadillo.Nombre}</IonLabel>
+                    <IonLabel text-center>{mercadillo.Nombre}</IonLabel>
                     <IonChip>
-                        {mercadillo.Tipo === "Generalista"
-                        &&<IonItem color="grey">
-                        && mercadillo.Tipo === "Ecológico"
-                        &&<IonItem color="red">
-                          }
+                        <IonItem color="grey">
                             <IonIcon slot="start" icon={pricetag}/>
                             <IonLabel>{mercadillo.Tipo}</IonLabel>
                         </IonItem>

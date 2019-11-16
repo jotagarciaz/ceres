@@ -55,7 +55,7 @@ const Login: React.FC<LoginProps> = ({history}) => {
             <IonGrid>
               <IonRow align-items-right>
                 <IonCol>
-                  <IonTitle>Login</IonTitle>
+                  <h1>Iniciar sesión</h1>
                 </IonCol>
                 <IonCol size = '1'>
                   <IonImg src = "/img/logo.svg" alt = ''></IonImg>

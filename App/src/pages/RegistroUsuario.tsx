@@ -50,7 +50,7 @@ const RegistroUsuario: React.FC<LoginProps> = ({history}) => {
             <IonGrid>
               <IonRow align-items-right>
                 <IonCol>
-                  <IonTitle>Registro</IonTitle>
+                  <h1>Crear cuenta</h1>
                 </IonCol>
                 <IonCol size = '1'>
                   <IonImg src = "/img/logo.svg" alt = ''></IonImg>
