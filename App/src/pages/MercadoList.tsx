@@ -47,7 +47,7 @@ const ListItems = () => {
                     </IonAvatar>
                 </IonCol>
                 <IonCol size = "3">
-                    <IonLabel text-center>{mercadillo.Nombre}</IonLabel>
+                    <IonLabel >{mercadillo.Nombre}</IonLabel>
                     <IonChip>
                         <IonItem color="grey">
                             <IonIcon slot="start" icon={pricetag}/>
