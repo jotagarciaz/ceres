@@ -1,9 +1,8 @@
 import { IonButtons, IonContent, IonHeader, IonIcon, IonItem, IonList, IonMenuButton, IonPage, IonTitle, IonToolbar, IonAvatar,IonGrid,IonRow,IonCol, IonImg, IonLabel } from '@ionic/react';
-import { americanFootball, basketball, beer, bluetooth, boat, build, flask, football, paperPlane, wifi } from 'ionicons/icons';
+import {thumbsUp,thumbsDown } from 'ionicons/icons';
 import activities from '../data/actividades.json';
 import React from 'react';
 import './Actividades.css';
-
 
 
 
@@ -38,16 +37,8 @@ const ListPage: React.FC = () => {
 
 const ListItems = () => {
   const icons = [
-    flask,
-    wifi,
-    beer,
-    football,
-    basketball,
-    paperPlane,
-    americanFootball,
-    boat,
-    bluetooth,
-    build
+    thumbsDown,
+    thumbsUp
   ];
 
   const items = activities.map((actividad,i) => {
@@ -61,10 +52,23 @@ const ListItems = () => {
                 <IonImg src={actividad.Imagen} alt={actividad.Nombre}></IonImg>
               </IonAvatar>
             </IonCol>
-            <IonCol size = "10">
+            <IonCol size = "6">
               <IonLabel>{actividad.Nombre}</IonLabel>
             </IonCol>
-            <IonCol size = "1" align-items-right>
+            <IonCol size = "3">
+              <IonRow>
+                <IonCol size="2">
+                  <IonIcon icon={thumbsDown} />
+                </IonCol>
+                <IonCol size="2">
+                  <IonLabel>{actividad.Valoracion}</IonLabel>
+                </IonCol>
+                <IonCol size="2">
+                  <IonIcon icon={thumbsUp}/>
+                </IonCol>
+              </IonRow>
+            </IonCol>
+            <IonCol size = "2" align-items-right>
               Precio: {actividad.Precio}
             </IonCol>
           </IonRow>

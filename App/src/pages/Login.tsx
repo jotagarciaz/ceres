@@ -42,10 +42,10 @@ const Login: React.FC<LoginProps> = ({history}) => {
             break;
           }
       }
-      console.log("entrando2")
+      
 
       if (hasMatch){
-        console.log("entrando3")
+        
 
         window.localStorage.setItem('currentUser',username);
         window.localStorage.setItem('tipo', tipo);
