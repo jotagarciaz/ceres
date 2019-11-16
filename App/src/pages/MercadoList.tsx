@@ -41,28 +41,31 @@ const ListItems = () => {
       <IonItem key={i} className="mercados">
         <IonGrid>
             <IonRow>
-              <IonCol size = "1">
-                <IonAvatar className="IonImg">
-                  <IonImg src={mercadillo.Imagen} alt={mercadillo.Nombre}></IonImg>
-                </IonAvatar>
-              </IonCol>
-              <IonCol size = "4">
-                <IonLabel>{mercadillo.Nombre}</IonLabel>
-                <IonChip>
+                <IonCol size = "2">
+                    <IonAvatar className="IonImg">
+                        <IonImg src={mercadillo.Imagen} alt={mercadillo.Nombre}></IonImg>
+                    </IonAvatar>
+                </IonCol>
+                <IonCol size = "3">
+                    <IonLabel>{mercadillo.Nombre}</IonLabel>
+                    <IonChip>
+                        {mercadillo.Tipo === "Generalista"
+                        &&<IonItem color="grey">
+                        && mercadillo.Tipo === "Ecológico"
+                        &&<IonItem color="red">
+                          }
+                            <IonIcon slot="start" icon={pricetag}/>
+                            <IonLabel>{mercadillo.Tipo}</IonLabel>
+                        </IonItem>
+                    </IonChip>
+                </IonCol>
+                <IonCol size = "4">
+                    <IonLabel>{mercadillo.Lugar}</IonLabel>
+                </IonCol>
+                <IonCol size = "3">
+                    {mercadillo.Fecha} de {mercadillo.HoraIni} - {mercadillo.HoraFin}
+                </IonCol>
 
-                <IonItem color = "grey">
-                <IonIcon slot="start" icon={pricetag} />
-                <IonLabel>{mercadillo.Tipo}</IonLabel>
-                </IonItem>
-
-            </IonChip>
-              </IonCol>
-              <IonCol size = "4">
-                <IonLabel>{mercadillo.Lugar}</IonLabel>
-              </IonCol>
-              <IonCol size = "3">
-                {mercadillo.Fecha} de {mercadillo.HoraIni} - {mercadillo.HoraFin}
-              </IonCol>
             </IonRow>
           </IonGrid>
       </IonItem>
