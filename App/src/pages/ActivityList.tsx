@@ -1,5 +1,6 @@
-import { IonButtons, IonContent, IonHeader, IonIcon, IonItem, IonList, IonMenuButton, IonPage, IonTitle, IonToolbar, IonAvatar,IonGrid,IonRow,IonCol, IonImg } from '@ionic/react';
+import { IonButtons, IonContent, IonHeader, IonIcon, IonItem, IonList, IonMenuButton, IonPage, IonTitle, IonToolbar, IonAvatar,IonGrid,IonRow,IonCol, IonImg, IonLabel } from '@ionic/react';
 import { americanFootball, basketball, beer, bluetooth, boat, build, flask, football, paperPlane, wifi } from 'ionicons/icons';
+import activities from '../data/actividades.json';
 import React from 'react';
 
 
@@ -48,16 +49,25 @@ const ListItems = () => {
     build
   ];
 
-  const items = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15].map(x => {
+  const items = activities.map((actividad,i) => {
     return (
-      <IonItem key={x}>
-        <IonAvatar slot="start">
-            <img src="/img/foto1.jpeg" />
-        </IonAvatar>
-        Item {x}
-        <div className="item-note" slot="end">
-          This is item # {x}
-        </div>
+      <IonItem key={i} className="actividades">
+
+        <IonGrid>
+          <IonRow>
+            <IonCol size = "1">
+              <IonAvatar className="IonImg">
+                <IonImg src={actividad.Imagen} alt={actividad.Nombre}></IonImg>
+              </IonAvatar>
+            </IonCol>
+            <IonCol size = "10">
+              <IonLabel>{actividad.Nombre}</IonLabel>
+            </IonCol>
+            <IonCol size = "1" align-items-right>
+              Precio: {actividad.Precio}
+            </IonCol>
+          </IonRow>
+        </IonGrid>
       </IonItem>
     );
   });
