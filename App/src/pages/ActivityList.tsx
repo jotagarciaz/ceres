@@ -56,21 +56,26 @@ const ListItems = () => {
               <IonLabel>{actividad.Nombre}</IonLabel>
             </IonCol>
             <IonCol size = "3">
+              <IonRow>
               { window.localStorage.getItem('tipo') === "Usuario"
-                &&<IonRow>
+                &&
                 <IonCol size="2" >
                  
                    <IonIcon icon={thumbsDown} />
 
                 </IonCol>
+                }
                 <IonCol size="2">
                   <IonLabel>{actividad.Valoracion}</IonLabel>
                 </IonCol>
+                { window.localStorage.getItem('tipo') === "Usuario"
+                &&
                 <IonCol size="2">
                   <IonIcon icon={thumbsUp}/>
                 </IonCol>
+               }
               </IonRow>
-              }
+              
             </IonCol>
             <IonCol size = "2" align-items-right>
               Precio: {actividad.Precio}
