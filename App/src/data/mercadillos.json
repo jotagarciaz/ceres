@@ -6,7 +6,8 @@
     "HoraIni": "9:00",
     "HoraFin": "14:00",
     "Tipo": "Ecológico",
-    "Imagen": "/img/Mercadillos/Imagenes/astillero.jpg"
+    "Imagen": "/img/Mercadillos/Imagenes/astillero.jpg",
+    "Valoracion": "3"
   },
   {
     "Nombre": "Laredo",
@@ -15,7 +16,8 @@
     "HoraIni": "9:30",
     "HoraFin": "14:00",
     "Tipo": "Ecológico",
-    "Imagen": "/img/Mercadillos/Imagenes/laredo.jpg"
+    "Imagen": "/img/Mercadillos/Imagenes/laredo.jpg",
+    "Valoracion": "3"
   },
   {
     "Nombre": "Maliaño",
@@ -24,7 +26,8 @@
     "HoraIni": "9:00",
     "HoraFin": "13:30",
     "Tipo": "Generalista",
-    "Imagen": "/img/Mercadillos/Imagenes/maliaño.jpg"
+    "Imagen": "/img/Mercadillos/Imagenes/maliaño.jpg",
+    "Valoracion": "4"
   },
   {
     "Nombre": "Noja",
@@ -33,7 +36,8 @@
     "HoraIni": "9:00",
     "HoraFin": "14:00",
     "Tipo": "Generalista",
-    "Imagen": "/img/Mercadillos/Imagenes/noja.jpg"
+    "Imagen": "/img/Mercadillos/Imagenes/noja.jpg",
+    "Valoracion": "2"
   },
   {
     "Nombre": "Unquera",
@@ -42,7 +46,8 @@
     "HoraIni": "9:00",
     "HoraFin": "14:00",
     "Tipo": "Generalista",
-    "Imagen": "/img/Mercadillos/Imagenes/unquera.jpg"
+    "Imagen": "/img/Mercadillos/Imagenes/unquera.jpg",
+    "Valoracion": "5"
   },
   {
     "Nombre": "Torrelavega",
@@ -51,7 +56,8 @@
     "HoraIni": "9:30",
     "HoraFin": "14:00",
     "Tipo": "Generalista",
-    "Imagen": "/img/Mercadillos/Imagenes/torrelavega.jpg"
+    "Imagen": "/img/Mercadillos/Imagenes/torrelavega.jpg",
+    "Valoracion": "5"
   },
   {
     "Nombre": "Castro Urdiales",
@@ -60,7 +66,8 @@
     "HoraIni": "9:30",
     "HoraFin": "14:00",
     "Tipo": "Generalista",
-    "Imagen": "/img/Mercadillos/Imagenes/castro_urdiales.jpg"
+    "Imagen": "/img/Mercadillos/Imagenes/castro_urdiales.jpg",
+    "Valoracion": "1"
   },
   {
     "Nombre": "Maliaño",
@@ -69,7 +76,8 @@
     "HoraIni": "9:30",
     "HoraFin": "14:00",
     "Tipo": "Ecológico",
-    "Imagen": "/img/Mercadillos/Imagenes/maliaño-eco.jpg"
+    "Imagen": "/img/Mercadillos/Imagenes/maliaño-eco.jpg",
+    "Valoracion": "2"
   },
   {
     "Nombre": "Comillas",
@@ -78,7 +86,8 @@
     "HoraIni": "9:30",
     "HoraFin": "14:00",
     "Tipo": "Generalista",
-    "Imagen": "/img/Mercadillos/Imagenes/comillas.jpg"
+    "Imagen": "/img/Mercadillos/Imagenes/comillas.jpg",
+    "Valoracion": "3"
   },
   {
     "Nombre": "Colindres",
@@ -87,7 +96,8 @@
     "HoraIni": "9:00",
     "HoraFin": "13:30",
     "Tipo": "Generalista",
-    "Imagen": "/img/Mercadillos/Imagenes/colindres.jpg"
+    "Imagen": "/img/Mercadillos/Imagenes/colindres.jpg",
+    "Valoracion": "4"
   },
   {
     "Nombre": "Sarón",
@@ -96,7 +106,8 @@
     "HoraIni": "9:00",
     "HoraFin": "14:00",
     "Tipo": "Generalista",
-    "Imagen": "/img/Mercadillos/Imagenes/saron.jpg"
+    "Imagen": "/img/Mercadillos/Imagenes/saron.jpg",
+    "Valoracion": "2"
   },
   {
     "Nombre": "Ampuero",
@@ -105,7 +116,8 @@
     "HoraIni": "9:00",
     "HoraFin": "14:00",
     "Tipo": "Generalista",
-    "Imagen": "/img/Mercadillos/Imagenes/ampuero.jpg"
+    "Imagen": "/img/Mercadillos/Imagenes/ampuero.jpg",
+    "Valoracion": "5"
   },
   {
     "Nombre": "Santoña",
@@ -114,7 +126,8 @@
     "HoraIni": "9:00",
     "HoraFin": "14:00",
     "Tipo": "Generalista",
-    "Imagen": "/img/Mercadillos/Imagenes/santoña.jpg"
+    "Imagen": "/img/Mercadillos/Imagenes/santoña.jpg",
+    "Valoracion": "2"
   },
   {
     "Nombre": "Torrelavega",
@@ -123,7 +136,8 @@
     "HoraIni": "11:00",
     "HoraFin": "14:00",
     "Tipo": "Ecológico",
-    "Imagen": "/img/Mercadillos/Imagenes/torrelavega-eco.jpg"
+    "Imagen": "/img/Mercadillos/Imagenes/torrelavega-eco.jpg",
+    "Valoracion": "3"
   },
   {
     "Nombre": "Argoños",
@@ -132,7 +146,8 @@
     "HoraIni": "9:00",
     "HoraFin": "14:00",
     "Tipo": "Generalista",
-    "Imagen": "/img/Mercadillos/Imagenes/argoños.jpg"
+    "Imagen": "/img/Mercadillos/Imagenes/argoños.jpg",
+    "Valoracion": "4"
   },
   {
     "Nombre": "Liérganes",
@@ -141,6 +156,7 @@
     "HoraIni": "9:00",
     "HoraFin": "14:00",
     "Tipo": "Generalista",
-    "Imagen": "/img/Mercadillos/Imagenes/lierganes.jpg"
+    "Imagen": "/img/Mercadillos/Imagenes/lierganes.jpg",
+    "Valoracion": "5"
   }
 ]
