@@ -56,7 +56,8 @@ const ListItems = () => {
               <IonLabel>{actividad.Nombre}</IonLabel>
             </IonCol>
             <IonCol size = "3">
-              <IonRow>
+              { window.localStorage.getItem('tipo') === "Usuario"
+                &&<IonRow>
                 <IonCol size="2">
                   <IonIcon icon={thumbsDown} />
                 </IonCol>
@@ -67,6 +68,7 @@ const ListItems = () => {
                   <IonIcon icon={thumbsUp}/>
                 </IonCol>
               </IonRow>
+              }
             </IonCol>
             <IonCol size = "2" align-items-right>
               Precio: {actividad.Precio}
