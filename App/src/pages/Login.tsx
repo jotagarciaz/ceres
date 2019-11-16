@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { IonHeader, IonToolbar, IonTitle, IonContent, IonPage, IonButtons, IonMenuButton, IonRow, IonCol, IonButton, IonList, IonItem, IonLabel, IonInput, IonText } from '@ionic/react';
+import { IonImg, IonHeader, IonToolbar, IonTitle, IonContent, IonPage, IonButtons, IonMenuButton, IonRow, IonCol, IonButton, IonList, IonItem, IonLabel, IonInput, IonText } from '@ionic/react';
 import { RouteComponentProps } from 'react-router';
 
 interface OwnProps extends RouteComponentProps {}
@@ -42,14 +42,10 @@ const Login: React.FC<LoginProps> = ({history}) => {
       </IonHeader>
       <IonContent>
 
-        <div className="login-logo">
-          <img src="assets/img/appicon.svg" alt="Ionic logo" />
-        </div>
-
         <form noValidate onSubmit={login}>
           <IonList>
             <IonItem>
-              <IonLabel position="stacked" color="primary">Username</IonLabel>
+              <IonLabel position="stacked" color="primary">Nombre usuario</IonLabel>
               <IonInput name="username" type="text" value={username} spellCheck={false} autocapitalize="off" onIonChange={e => setUsername(e.detail.value!)}
                 required>
               </IonInput>
@@ -57,29 +53,29 @@ const Login: React.FC<LoginProps> = ({history}) => {
 
             {formSubmitted && usernameError && <IonText color="danger">
               <p className="ion-padding-start">
-                Username is required
+                Se requiere nombre de usuario
               </p>
             </IonText>}
 
             <IonItem>
-              <IonLabel position="stacked" color="primary">Password</IonLabel>
+              <IonLabel position="stacked" color="primary">Contraseña</IonLabel>
               <IonInput name="password" type="password" value={password} onIonChange={e => setPassword(e.detail.value!)}>
               </IonInput>
             </IonItem>
 
             {formSubmitted && passwordError && <IonText color="danger">
               <p className="ion-padding-start">
-                Password is required
+                Se requiere contraseña
               </p>
             </IonText>}
           </IonList>
 
           <IonRow>
             <IonCol>
-              <IonButton type="submit" expand="block">Login</IonButton>
+              <IonButton routerLink="/signup" color="light" expand="block">Crear cuenta</IonButton>
             </IonCol>
             <IonCol>
-              <IonButton routerLink="/signup" color="light" expand="block">Signup</IonButton>
+              <IonButton type="submit" expand="block">Iniciar sesión</IonButton>
             </IonCol>
           </IonRow>
         </form>
