@@ -23,5 +23,10 @@
     "Nombre": "Restauraciones Monasterio",
     "Imagen": "/img/Tiendas/restauraciones.png",
     "Url": "https://www.restauracionesmonasterio.es/es/"
+  },
+  {
+    "Nombre": "Somazorra",
+    "Imagen": "/img/Tiendas/somazorra.jpg",
+    "Url": "http://sidrasomarroza.es/nosotros/"
   }
 ]

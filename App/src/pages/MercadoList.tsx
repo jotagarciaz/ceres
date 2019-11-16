@@ -15,7 +15,7 @@ const ListPage: React.FC = () => {
             <IonGrid>
               <IonRow align-items-right>
                 <IonCol>
-                  <IonTitle>Mercados</IonTitle>
+                  <h1 >Mercados</h1>
                 </IonCol>
                 <IonCol size = '1'>
                   <IonImg src = "/img/logo.svg" alt = ''></IonImg>
@@ -41,28 +41,30 @@ const ListItems = () => {
       <IonItem key={i} className="mercados">
         <IonGrid>
             <IonRow>
-                <IonCol size = "1">
-                    <IonAvatar className="IonImg">
-                        <IonImg src={mercadillo.Imagen} alt={mercadillo.Nombre}></IonImg>
-                    </IonAvatar>
-                </IonCol>
-                <IonCol size = "4">
-                    <IonLabel>{mercadillo.Nombre}</IonLabel>
-                    <IonChip>
-                        <IonItem>
-                            <IonIcon slot="start" icon={pricetag} />
-                            <IonLabel>{mercadillo.Tipo}</IonLabel>
-                        </IonItem>
-                    </IonChip>
-                </IonCol>
-                <IonCol size = "4">
-                    <IonLabel>{mercadillo.Lugar}</IonLabel>
-                </IonCol>
-                <IonCol size = "3">
-                    {mercadillo.Fecha} de {mercadillo.HoraIni} - {mercadillo.HoraFin}
-                </IonCol>
+              <IonCol size = "1">
+                <IonAvatar className="IonImg">
+                  <IonImg src={mercadillo.Imagen} alt={mercadillo.Nombre}></IonImg>
+                </IonAvatar>
+              </IonCol>
+              <IonCol size = "4">
+                <IonLabel>{mercadillo.Nombre}</IonLabel>
+                <IonChip>
+
+                <IonItem color = "grey">
+                <IonIcon slot="start" icon={pricetag} />
+                <IonLabel>{mercadillo.Tipo}</IonLabel>
+                </IonItem>
+
+            </IonChip>
+              </IonCol>
+              <IonCol size = "4">
+                <IonLabel>{mercadillo.Lugar}</IonLabel>
+              </IonCol>
+              <IonCol size = "3">
+                {mercadillo.Fecha} de {mercadillo.HoraIni} - {mercadillo.HoraFin}
+              </IonCol>
             </IonRow>
-        </IonGrid>
+          </IonGrid>
       </IonItem>
     );
   });
