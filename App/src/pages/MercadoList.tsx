@@ -1,5 +1,5 @@
 import { IonButtons, IonContent, IonHeader, IonIcon, IonItem, IonList, IonMenuButton, IonPage, IonTitle, IonToolbar, IonAvatar, IonCol, IonGrid, IonRow, IonImg, IonLabel, IonChip } from '@ionic/react';
-import { americanFootball, basketball, beer, bluetooth, boat, build, flask, football, paperPlane, wifi } from 'ionicons/icons';
+import { pricetag } from 'ionicons/icons';
 import React from 'react';
 import mercadillos from '../data/mercadillos.json';
 import './Mercado.css';
@@ -35,44 +35,34 @@ const ListPage: React.FC = () => {
 
 
 const ListItems = () => {
-  const icons = [
-    flask,
-    wifi,
-    beer,
-    football,
-    basketball,
-    paperPlane,
-    americanFootball,
-    boat,
-    bluetooth,
-    build
-  ];
 
   const items = mercadillos.map((mercadillo,i) => {
     return (
       <IonItem key={i} className="mercados">
         <IonGrid>
             <IonRow>
-              <IonCol size = "1">
-                <IonAvatar className="IonImg">
-                  <IonImg src={mercadillo.Imagen} alt={mercadillo.Nombre}></IonImg>
-                </IonAvatar>
-              </IonCol>
-              <IonCol size = "4">
-                <IonLabel>{mercadillo.Nombre} ({mercadillo.Tipo})</IonLabel>
-                <IonChip>
-                    <IonIcon icon="close"/>
-                <IonLabel>{mercadillo.Tipo}</IonLabel>
-            </IonChip>
-              </IonCol>
-              <IonCol size = "4">
-                <IonLabel>{mercadillo.Lugar}</IonLabel>
-              </IonCol>
-              <IonCol size = "3">
-                {mercadillo.Fecha} de {mercadillo.HoraIni} - {mercadillo.HoraFin}
-              </IonCol>
+                <IonCol size = "1">
+                    <IonAvatar className="IonImg">
+                        <IonImg src={mercadillo.Imagen} alt={mercadillo.Nombre}></IonImg>
+                    </IonAvatar>
+                </IonCol>
+                <IonCol size = "4">
+                    <IonLabel>{mercadillo.Nombre}</IonLabel>
+                    <IonChip>
+                        <IonItem>
+                            <IonIcon slot="start" icon={pricetag} />
+                            <IonLabel>{mercadillo.Tipo}</IonLabel>
+                        </IonItem>
+                    </IonChip>
+                </IonCol>
+                <IonCol size = "4">
+                    <IonLabel>{mercadillo.Lugar}</IonLabel>
+                </IonCol>
+                <IonCol size = "3">
+                    {mercadillo.Fecha} de {mercadillo.HoraIni} - {mercadillo.HoraFin}
+                </IonCol>
             </IonRow>
-          </IonGrid>
+        </IonGrid>
       </IonItem>
     );
   });
