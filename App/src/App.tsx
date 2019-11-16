@@ -57,7 +57,7 @@ const appPages: AppPage[] = [
     icon: cart
   },
   {
-    title: 'Tiendas',
+    title: 'Tiendas artesanales',
     url: '/tiendas',
     icon: basket
   }
