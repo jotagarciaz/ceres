@@ -48,18 +48,12 @@ const ListItems = () => {
                 </IonCol>
                 <IonCol size = "3">
                     <IonLabel>{mercadillo.Nombre}</IonLabel>
-                        {mercadillo.Tipo === "Generalista"
-                        && <IonChip><IonItem color="default">
-                          <IonIcon slot="start" icon={pricetag}/>
+                        <IonChip>
+                          <IonItem color='default'>
+                            <IonIcon slot="start" icon={pricetag}/>
                             <IonLabel>{mercadillo.Tipo}</IonLabel>
                         </IonItem>
-                        </IonChip>}
-                         {mercadillo.Tipo === "Ecológico"
-                        && <IonChip color='success'><IonItem color='success'>
-                        <IonIcon slot="start" icon={pricetag}/>
-                          <IonLabel>{mercadillo.Tipo}</IonLabel>
-                      </IonItem>
-                      </IonChip>}
+                      </IonChip>
                             
                     
                 </IonCol>
