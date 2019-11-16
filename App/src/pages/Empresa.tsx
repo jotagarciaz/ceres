@@ -35,7 +35,7 @@ import {
               <IonGrid>
                 <IonRow align-items-right>
                   <IonCol>
-                    <IonTitle>Ceres</IonTitle>
+                    <h1>Página de bienvenida</h1>
                   </IonCol>
                   <IonCol size = '1'>
                     <IonImg src = "/img/logo.svg" alt = ''></IonImg>
@@ -47,14 +47,17 @@ import {
         </IonHeader>
         <IonContent>
           <IonCard className="welcome-card">
-            <img src="/assets/icon/lesvaques.jpg" alt=""/>
+            <img src="/assets/icon/empresa.jpg" alt=""/>
             <IonCardHeader>
               <IonCardSubtitle>Local y sostenible.</IonCardSubtitle>
-              <IonCardTitle>¡Bienvenid@ {window.localStorage.getItem("currentUser")}!</IonCardTitle>
+              <IonCardTitle>¡Bienvenido a Ceres para Empresas,  {window.localStorage.getItem("currentUser")}!</IonCardTitle>
             </IonCardHeader>
             <IonCardContent>
               <p>
-                Promociona tus productos.
+                Puedes ayudar a promocionar tu negocio añadiendo tu pagnia web a tu perfil, y ofertando tus productos y actividades.
+              </p>
+              <p>
+                ¡Anímate!
               </p>
             </IonCardContent>
           </IonCard>

@@ -57,6 +57,7 @@ const ListItems = () => {
           </IonAvatar>
 
             <IonLabel> <a href = {alimentacion.Url}>{alimentacion.Nombre}</a></IonLabel>
+            <IonLabel> {alimentacion.Num}</IonLabel>
 
 
       </IonItem>
