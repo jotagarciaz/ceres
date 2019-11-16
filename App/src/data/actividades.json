@@ -4,41 +4,47 @@
     "Imagen" : "/img/Actividades/sable.jpg",
     "Localizacion" : "Laredo",
     "Precio" : "12€ la hora",
-    "Valoracion": 5
+    "Valoracion": "5",
+    "Etiqueta":"Al aire libre"
   },
   {
     "Nombre" : "Ruta Faro del Caballo",
     "Imagen" : "/img/Actividades/faroCaballo.jpg",
     "Localizacion" : "Santoña",
     "Precio" : "Gratis",
-    "Valoracion": 4
+    "Valoracion": "4",
+    "Etiqueta":"Senderismo"
   },
   {
     "Nombre" : "Curso de elaboración de pan artesano",
     "Imagen" : "/img/Actividades/pan.jpg",
     "Localizacion" : "Santander",
     "Precio" : "50€",
-    "Valoracion": 3
+    "Valoracion": "3",
+    "Etiqueta":"Gastronómico"
   },
   {
     "Nombre" : "Taller de Sobaos Pasiegos",
     "Imagen" : "/img/Actividades/sobao.jpg",
     "Localizacion" : "Selaya",
     "Precio" : "20€",
-    "Valoracion": 4
+    "Valoracion": "4",
+    "Etiqueta":"Gastronómico"
   },
   {
     "Nombre" : "Visita Ganadería Cudaña",
     "Imagen" : "/img/Actividades/granja.png",
     "Localizacion" : "Labarces",
     "Precio" : "10€",
-    "Valoracion": 2
+    "Valoracion": "2",
+    "Etiqueta":"Al aire libre"
   },
   {
     "Nombre" : "Taller de queso",
     "Imagen" : "/img/Actividades/queso.jpg",
     "Localizacion" : "Labarces",
     "Precio" : "12€",
-    "Valoracion": 3
+    "Valoracion": "3",
+    "Etiqueta":"Gastronómico"
   }
 ]
