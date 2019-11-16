@@ -1,5 +1,10 @@
+import { home, list, basket, basketball, cart, nutrition } from 'ionicons/icons';
+
 import {
   IonContent,
+  IonGrid,
+  IonRow,
+  IonCol,
   IonHeader,
   IonIcon,
   IonItem,
@@ -22,10 +27,27 @@ const Menu: React.FunctionComponent<MenuProps> = ({ appPages }) => (
   <IonMenu contentId="main" type="overlay">
     <IonHeader>
       <IonToolbar>
-        <IonTitle>Menu</IonTitle>
+        <IonTitle>Menú</IonTitle>
       </IonToolbar>
     </IonHeader>
     <IonContent>
+        <IonGrid>
+            <IonMenuToggle key={1} autoHide={false}>
+                <IonRow>
+                    <IonCol>
+                        <IonItem routerLink={"/login"} routerDirection="none">
+                            <IonLabel>{"Iniciar sesión"}</IonLabel>
+                        </IonItem>
+                    </IonCol>
+                    <IonCol>
+                        <IonItem routerLink={"/login"} routerDirection="none">
+                            <IonLabel>{"Crear cuenta"}</IonLabel>
+                        </IonItem>
+                    </IonCol>
+                </IonRow>
+            </IonMenuToggle>
+
+      </IonGrid>
       <IonList>
         {appPages.map((appPage, index) => {
           return (
@@ -37,6 +59,7 @@ const Menu: React.FunctionComponent<MenuProps> = ({ appPages }) => (
             </IonMenuToggle>
           );
         })}
+
       </IonList>
     </IonContent>
   </IonMenu>
