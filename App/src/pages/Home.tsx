@@ -15,7 +15,10 @@ import {
   IonMenuButton,
   IonPage,
   IonTitle,
-  IonToolbar
+  IonToolbar,
+  IonRow,
+  IonGrid,
+  IonCol
   } from '@ionic/react';
 import { book, build, colorFill, grid } from 'ionicons/icons';
 import React from 'react';
@@ -26,10 +29,19 @@ const HomePage: React.FC = () => {
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <IonButtons slot="start">
+          <IonButtons>
             <IonMenuButton />
+            <IonGrid>
+              <IonRow align-items-right>
+                <IonCol>
+                  <IonTitle>Home</IonTitle>
+                </IonCol>
+                <IonCol>
+                  <img src = "/img/logo.svg" alt = '' height = '30px' width = '30px'></img>
+                </IonCol>
+              </IonRow>
+            </IonGrid>
           </IonButtons>
-          <IonTitle>Home</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent>
