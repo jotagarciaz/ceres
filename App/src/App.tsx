@@ -5,6 +5,7 @@ import { IonReactRouter } from '@ionic/react-router';
 import { AppPage } from './declarations';
 
 import Login from './pages/Login';
+import RegistroUsuario from './pages/RegistroUsuario'
 
 import Menu from './components/Menu';
 import Home from './pages/Home';
@@ -75,6 +76,7 @@ const App: React.FC = () => (
           <Route path="/mercados" component={Mercados} exact={true} />
           <Route path="/alimentacion" component={Alimentacion} exact={true} />
           <Route path="/login" component={Login} exact={true} />
+          <Route path="/regUsr" component={RegistroUsuario} exact={true} />
           <Route path="/" render={() => <Redirect to="/activities" exact={true} /> } />
         </IonRouterOutlet>
       </IonSplitPane>

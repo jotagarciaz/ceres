@@ -24,6 +24,7 @@ const Login: React.FC<LoginProps> = ({history}) => {
     if(!password) {
       setPasswordError(true);
     }
+    
 
     if(username && password) {
       history.push('/tabs/schedule', {direction: 'none'});
@@ -55,7 +56,7 @@ const Login: React.FC<LoginProps> = ({history}) => {
           <IonList>
             <IonItem>
               <IonLabel position="stacked" color="primary">Nombre usuario</IonLabel>
-              <IonInput name="username" type="text" value={username} spellCheck={false} autocapitalize="off" onIonChange={e => setUsername(e.detail.value!)}
+              <IonInput name="username" type="text" value={username} spellCheck={false} autocapitalize="off" onIonChange={(e: { detail: { value: any; }; }) => setUsername(e.detail.value!)}
                 required>
               </IonInput>
             </IonItem>
@@ -68,7 +69,7 @@ const Login: React.FC<LoginProps> = ({history}) => {
 
             <IonItem>
               <IonLabel position="stacked" color="primary">Contraseña</IonLabel>
-              <IonInput name="password" type="password" value={password} onIonChange={e => setPassword(e.detail.value!)}>
+              <IonInput name="password" type="password" value={password} onIonChange={(e: { detail: { value: any; }; }) => setPassword(e.detail.value!)}>
               </IonInput>
             </IonItem>
 
@@ -81,7 +82,7 @@ const Login: React.FC<LoginProps> = ({history}) => {
 
           <IonRow>
             <IonCol>
-              <IonButton routerLink="/signup" color="light" expand="block">Crear cuenta</IonButton>
+              <IonButton routerLink="/regUsr" color="light" expand="block">Crear cuenta</IonButton>
             </IonCol>
             <IonCol>
               <IonButton type="submit" expand="block">Iniciar sesión</IonButton>
