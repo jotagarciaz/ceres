@@ -3,57 +3,57 @@
     "Nombre" : "Las Lindes",
     "Imagen" : "/img/Alimentacion/lindes.jpg",
     "Url" : "http://www.laslindes.es/",
-    "Num" : ""
+    "Num" : "",
     "Valoracion": 4
   },
   {
     "Nombre" : "La Pasiega de Peña Pelada",
     "Imagen" : "/img/Alimentacion/pasiega.png",
     "Url" : "https://www.lapasiegadepenapelada.com/",
-    "Num" : ""
+    "Num" : "",
     "Valoracion": 3
   },
   {
     "Nombre" : "Carnicería ecológica las Nieves",
     "Imagen" : "/img/Alimentacion/carniceria.png",
     "Url" : "http://www.carniceriaecologicalasnieves.com/epages/84628073.sf/es_ES/?ObjectPath=/Shops/84628073/Categories/Inicio",
-    "Num" : ""
+    "Num" : "",
     "Valoracion": 3
   },
   {
     "Nombre" : "El Gourmet de la Tierruca",
     "Imagen" : "/img/Alimentacion/conservas.jpg",
     "Url" : "https://www.gourmettierruca.com/ProductodeCantabria/anchoa-de-santona-ecologica-en-aceite-de-oliva-50-g/",
-    "Num" : ""
+    "Num" : "",
     "Valoracion": 2
 
   },
   {
-    "Nombre" : "Marcos Rold�n",
+    "Nombre" : "Marcos Roldán",
     "Imagen" : "/img/Alimentacion/pimientos.jpg",
     "Url" : "https://www.dcantabria.es/",
-    "Num" : "N�mero contacto particular: 675443572"
+    "Num" : "Número contacto particular: 675443572",
     "Valoracion": 5
   },
   {
     "Nombre" : "NaranjasECO",
     "Imagen" : "/img/Alimentacion/naranjas.png",
     "Url" : "http://frutasyverdurasecologicasen.naranjaseco.com/ampuero-cantabria",
-    "Num" : ""
+    "Num" : "",
     "Valoracion": 1
   },
   {
     "Nombre" : "Sabores del Campo",
     "Imagen" : "/img/Tiendas/sabores.jpg",
     "Url" : "/",
-    "Num" : ""
+    "Num" : "",
     "Valoracion": 4
   },
   {
     "Nombre" : "D-Cantabria",
     "Imagen" : "/img/Tiendas/dcantabria.jpg",
     "Url" : "https://www.dcantabria.es/",
-    "Num" : ""
+    "Num" : "",
     "Valoracion": 5
   }
 
