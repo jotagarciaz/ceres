@@ -58,7 +58,7 @@ const ListItems = () => {
 
             <IonLabel>{mercadillo.Nombre}</IonLabel>
         
-          {mercadillo.HoraIni}
+          Horario: {mercadillo.HoraIni} - {mercadillo.HoraFin}
 
       </IonItem>
     );

@@ -40,7 +40,7 @@ const Menu: React.FunctionComponent<MenuProps> = ({ appPages }) => (
                         </IonItem>
                     </IonCol>
                     <IonCol>
-                        <IonItem routerLink={"/login"} routerDirection="none">
+                        <IonItem routerLink={"/regUsr"} routerDirection="none">
                             <IonLabel>{"Crear cuenta"}</IonLabel>
                         </IonItem>
                     </IonCol>
