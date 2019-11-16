@@ -2,7 +2,6 @@ import { home, list, basket, basketball, cart, nutrition } from 'ionicons/icons'
 
 import {
   IonContent,
-  IonImg,
   IonGrid,
   IonRow,
   IonCol,
@@ -28,14 +27,7 @@ const Menu: React.FunctionComponent<MenuProps> = ({ appPages }) => (
   <IonMenu contentId="main" type="overlay">
     <IonHeader>
       <IonToolbar>
-        <IonRow>
-            <IonCol>
-                <IonTitle>Menú</IonTitle>
-            </IonCol>
-            <IonCol>
-
-            </IonCol>
-        </IonRow>
+        <IonTitle>Menú</IonTitle>
       </IonToolbar>
     </IonHeader>
     <IonContent>
