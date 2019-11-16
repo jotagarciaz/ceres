@@ -58,7 +58,7 @@ const appPages: AppPage[] = [
     icon: cart
   },
   {
-    title: 'Tiendas artesanales',
+    title: 'Empresas artesanales',
     url: '/tiendas',
     icon: basket
   }
@@ -82,7 +82,7 @@ const App: React.FC = () => (
           
           <Route path="/login" component={Login} exact={true} /> 
           <Route path="/regUsr" component={RegistroUsuario} exact={true} />
-          <Route path="/" render={() => <Redirect to="/activities" exact={true} /> } />
+          <Route path="/" render={() => <Redirect to="/home" exact={true} /> } />
         </IonRouterOutlet>
       </IonSplitPane>
     </IonReactRouter>

@@ -2,6 +2,7 @@ import { IonButtons, IonContent, IonHeader, IonIcon, IonItem, IonList, IonMenuBu
 import { americanFootball, basketball, beer, bluetooth, boat, build, flask, football, paperPlane, wifi } from 'ionicons/icons';
 import activities from '../data/actividades.json';
 import React from 'react';
+import './Actividades.css';
 
 
 

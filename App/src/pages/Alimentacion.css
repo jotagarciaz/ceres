@@ -1,0 +1,13 @@
+.alimentacion {
+    height: 15vh;
+}
+
+.alimentacion .img  {
+    width:10vh !important;
+    height : 10vh !important;
+
+    }
+.alimentacion a {
+        color: black;
+        text-decoration: none;
+    }

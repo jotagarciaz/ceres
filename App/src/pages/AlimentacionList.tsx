@@ -1,8 +1,8 @@
-import { IonButtons, IonContent, IonHeader, IonIcon, IonItem, IonList, IonMenuButton, IonPage, IonTitle, IonToolbar, IonAvatar } from '@ionic/react';
+import { IonButtons, IonContent, IonHeader, IonIcon, IonItem, IonList, IonMenuButton, IonPage, IonTitle, IonToolbar, IonAvatar, IonCol, IonGrid, IonRow, IonImg, IonLabel } from '@ionic/react';
 import { americanFootball, basketball, beer, bluetooth, boat, build, flask, football, paperPlane, wifi } from 'ionicons/icons';
 import React from 'react';
-
-
+import alimentacion from '../data/alimentacion.json';
+import './Alimentacion.css';
 
 
 const ListPage: React.FC = () => {
@@ -39,16 +39,17 @@ const ListItems = () => {
     build
   ];
 
-  const items = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15].map(x => {
+  const items = alimentacion.map((alimentacion,i) => {
     return (
-      <IonItem key={x}>
-        <IonAvatar slot="start">
-            <img src="/img/foto1.jpeg" />
-        </IonAvatar>
-        Item {x}
-        <div className="item-note" slot="end">
-          This is item # {x}
-        </div>
+      <IonItem key={i} className="alimentacion">
+
+          <IonAvatar slot="start" className="img">
+              <img src={alimentacion.Imagen} alt={alimentacion.Nombre}></img>
+          </IonAvatar>
+
+            <IonLabel> <a href = {alimentacion.Url}>{alimentacion.Nombre}</a></IonLabel>
+
+
       </IonItem>
     );
   });

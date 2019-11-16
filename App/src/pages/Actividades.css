@@ -1,0 +1,13 @@
+.actividades {
+    height: 15vh;
+}
+
+.actividades .img  {
+    width:10vh !important;
+    height : 10vh !important;
+
+    }
+.actividades a {
+        color: black;
+        text-decoration: none;
+    }
