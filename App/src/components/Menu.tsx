@@ -29,6 +29,7 @@ interface MenuProps extends RouteComponentProps {
 
 const logout = () =>{
   window.localStorage.clear()
+  window.location.href ="/login";
 }
 
 const Menu: React.FunctionComponent<MenuProps> = ({ appPages }) => (
@@ -83,11 +84,20 @@ const Menu: React.FunctionComponent<MenuProps> = ({ appPages }) => (
       <IonList>
         {appPages.map((appPage, index) => {
           return (
+            
             <IonMenuToggle key={index} autoHide={false}>
-              <IonItem routerLink={appPage.url} routerDirection="none">
+              {appPage.title !== "Bienvenida"
+              &&<IonItem routerLink={appPage.url} routerDirection="none">
                 <IonIcon slot="start" icon={appPage.icon} />
                 <IonLabel>{appPage.title}</IonLabel>
               </IonItem>
+              }
+              {appPage.title === "Bienvenida" && window.localStorage.getItem('tipo') === "Empresa"
+              &&<IonItem routerLink={appPage.url} routerDirection="none">
+                <IonIcon slot="start" icon={appPage.icon} />
+                <IonLabel>{appPage.title}</IonLabel>
+              </IonItem>
+              }
             </IonMenuToggle>
           );
         })}

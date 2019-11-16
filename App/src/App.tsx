@@ -17,7 +17,7 @@ import MercadoList from './pages/MercadoList';
 import TiendasList from './pages/TiendasList';
 import AlimentacionList from './pages/AlimentacionList';
 import Oferta from './pages/PublicarOferta'
-import { home, list, basket, basketball, cart, nutrition } from 'ionicons/icons';
+import { home, list, basket, basketball, cart, nutrition, chatboxes } from 'ionicons/icons';
 
 
 /* Core CSS required for Ionic components to work properly */
@@ -43,7 +43,7 @@ const appPages: AppPage[] = [
   {
     title: 'Bienvenida',
     url: '/empresa',
-    icon: basket
+    icon: chatboxes
   },
   {
     title: 'Home',
