@@ -1,0 +1,9 @@
+.mercados {
+    height: 15vh;
+}
+
+.mercados .img  {     
+    width:10vh !important;  
+    height : 10vh !important;  
+
+    }

@@ -1,8 +1,8 @@
-import { IonButtons, IonContent, IonHeader, IonIcon, IonItem, IonList, IonMenuButton, IonPage, IonTitle, IonToolbar, IonAvatar, IonCol, IonGrid, IonRow, IonImg } from '@ionic/react';
+import { IonButtons, IonContent, IonHeader, IonIcon, IonItem, IonList, IonMenuButton, IonPage, IonTitle, IonToolbar, IonAvatar, IonCol, IonGrid, IonRow, IonImg, IonLabel } from '@ionic/react';
 import { americanFootball, basketball, beer, bluetooth, boat, build, flask, football, paperPlane, wifi } from 'ionicons/icons';
 import React from 'react';
 import mercadillos from '../data/mercadillos.json';
-
+import './Mercado.css';
 
 
 const ListPage: React.FC = () => {
@@ -50,14 +50,16 @@ const ListItems = () => {
 
   const items = mercadillos.map((mercadillo,i) => {
     return (
-      <IonItem key={i}>
-        <IonAvatar slot="start">
-            <img src={mercadillo.Imagen} alt={mercadillo.Nombre}/>
-        </IonAvatar>
+      <IonItem key={i} className="mercados">
+
+          <IonAvatar slot="start" className="img">
+              <img src={mercadillo.Imagen} alt={mercadillo.Nombre}/>
+          </IonAvatar>
+
+            <IonLabel>{mercadillo.Nombre}</IonLabel>
         
-        <div className="item-note" slot="end">
-          {mercadillo.Nombre}
-        </div>
+          {mercadillo.HoraIni}
+
       </IonItem>
     );
   });
