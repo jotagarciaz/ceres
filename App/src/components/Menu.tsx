@@ -24,14 +24,14 @@ import "./Menu.css";
 
 interface MenuProps extends RouteComponentProps {
   appPages: AppPage[];
-  user :string|null;
+  
 }
 
 const logout = () =>{
   window.localStorage.clear()
 }
 
-const Menu: React.FunctionComponent<MenuProps> = ({ appPages , user}) => (
+const Menu: React.FunctionComponent<MenuProps> = ({ appPages }) => (
   <IonMenu contentId="main" type="overlay">
     <IonHeader>
       <IonToolbar>
@@ -42,7 +42,7 @@ const Menu: React.FunctionComponent<MenuProps> = ({ appPages , user}) => (
                     <IonAvatar align-items-right>
                           <IonImg id="srredondo" src="/assets/sr_redondo.png" />
                     </IonAvatar>
-                    <IonLabel>{user}</IonLabel>
+                    <IonLabel>{window.localStorage.getItem('currentUser')}</IonLabel>
                     </IonCol>
                 </IonRow>}
       </IonToolbar>

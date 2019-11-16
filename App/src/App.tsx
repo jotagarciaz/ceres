@@ -9,6 +9,8 @@ import RegistroUsuario from './pages/RegistroUsuario'
 
 import Menu from './components/Menu';
 import Home from './pages/Home';
+import Empresa from './pages/Empresa';
+import Usuario from './pages/Usuario';
 import List from './pages/List';
 import ActivityList from './pages/ActivityList';
 import MercadoList from './pages/MercadoList';
@@ -61,28 +63,28 @@ const appPages: AppPage[] = [
     title: 'Empresas artesanales',
     url: '/tiendas',
     icon: basket
-  }
+  },
+  
 ];
 
-const user = () => {
-  return window.localStorage.getItem('currentUser');
-};
 
 const App: React.FC = () => (
   <IonApp>
     <IonReactRouter>
       <IonSplitPane contentId="main">
-        <Menu appPages={appPages} user={user()}/>
+        <Menu appPages={appPages} />
         <IonRouterOutlet id="main">
           <Route path="/home" component={Home} exact={true} />
           <Route path="/tiendas" component={TiendasList} exact={true} />
           <Route path="/activities" component={ActivityList} exact={true} />
           <Route path="/mercados" component={MercadoList} exact={true} />
           <Route path="/alimentacion" component={AlimentacionList} exact={true} />
-          
+          <Route path="/empresa" routerLink={"/empresa"} routerDirection="none" component={Empresa} exact={true} /> 
+          <Route path="/usuario" routerLink={"/usuario"} routerDirection="none" component={Usuario} exact={true} />  
           <Route path="/login" component={Login} exact={true} /> 
           <Route path="/regUsr" component={RegistroUsuario} exact={true} />
           <Route path="/" render={() => <Redirect to="/home" exact={true} /> } />
+         
         </IonRouterOutlet>
       </IonSplitPane>
     </IonReactRouter>
