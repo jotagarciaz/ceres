@@ -1,0 +1,32 @@
+[
+  {
+    "Nombre": "Marina",
+    "Contrasenha": "12345",
+    "Tipo": "Usuario"
+  },
+  {
+    "Nombre": "Clara",
+    "Contrasenha": "12345",
+    "Tipo": "Usuario"
+  },
+  {
+    "Nombre": "Joaquin",
+    "Contrasenha": "12345",
+    "Tipo": "Usuario"
+  },
+  {
+    "Nombre": "Axiel",
+    "Contrasenha": "12345",
+    "Tipo": "Usuario"
+  },
+  {
+    "Nombre": "Agriculturas Paco",
+    "Contrasenha": "12345",
+    "Tipo": "Empresa"
+  },
+  {
+    "Nombre": "Zapatillas Manoli",
+    "Contrasenha": "12345",
+    "Tipo": "Empresa"
+  }
+]
