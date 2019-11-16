@@ -1,4 +1,4 @@
-import { IonButtons, IonContent, IonHeader, IonIcon, IonItem, IonList, IonMenuButton, IonPage, IonTitle, IonToolbar, IonAvatar, IonGrid, IonCol, IonRow } from '@ionic/react';
+import { IonButtons, IonContent, IonHeader, IonIcon, IonItem, IonList, IonMenuButton, IonPage, IonTitle, IonToolbar, IonAvatar, IonGrid, IonCol, IonRow, IonImg } from '@ionic/react';
 import { americanFootball, basketball, beer, bluetooth, boat, build, flask, football, paperPlane, wifi } from 'ionicons/icons';
 import React from 'react';
 
@@ -17,8 +17,8 @@ const ListPage: React.FC = () => {
                 <IonCol>
                   <IonTitle>Alimentación</IonTitle>
                 </IonCol>
-                <IonCol>
-                  <img src = "/img/logo.svg" alt = '' height = '30px' width = '30px'></img>
+                <IonCol size = '1'>
+                  <IonImg src = "/img/logo.svg" alt = ''></IonImg>
                 </IonCol>
               </IonRow>
             </IonGrid>

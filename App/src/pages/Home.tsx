@@ -18,7 +18,8 @@ import {
   IonToolbar,
   IonRow,
   IonGrid,
-  IonCol
+  IonCol,
+  IonImg
   } from '@ionic/react';
 import { book, build, colorFill, grid } from 'ionicons/icons';
 import React from 'react';
@@ -36,8 +37,8 @@ const HomePage: React.FC = () => {
                 <IonCol>
                   <IonTitle>Home</IonTitle>
                 </IonCol>
-                <IonCol>
-                  <img src = "/img/logo.svg" alt = '' height = '30px' width = '30px'></img>
+                <IonCol size = '1'>
+                  <IonImg src = "/img/logo.svg" alt = ''></IonImg>
                 </IonCol>
               </IonRow>
             </IonGrid>

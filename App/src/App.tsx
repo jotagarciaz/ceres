@@ -53,7 +53,7 @@ const appPages: AppPage[] = [
   },
   {
     title: 'Mercado',
-    url: '/home',
+    url: '/mercados',
     icon: cart
   },
   {
@@ -72,7 +72,7 @@ const App: React.FC = () => (
           <Route path="/home" component={Home} exact={true} />
           <Route path="/tiendas" component={Tiendas} exact={true} />
           <Route path="/activities" component={Actividades} exact={true} />
-          <Route path="/home" component={Mercados} exact={true} />
+          <Route path="/mercados" component={Mercados} exact={true} />
           <Route path="/alimentacion" component={Alimentacion} exact={true} />
           <Route path="/login" component={Login} exact={true} />
           <Route path="/" render={() => <Redirect to="/activities" exact={true} /> } />
