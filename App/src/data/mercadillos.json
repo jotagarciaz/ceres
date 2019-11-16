@@ -5,7 +5,7 @@
     "Fecha": "Lunes ",
     "HoraIni": "9:00",
     "HoraFin": "14:00",
-    "Tipo": "Mercadillo Ecológico",
+    "Tipo": "Ecológico",
     "Imagen": "/img/Mercadillos/Imagenes/astillero.jpg"
   },
   {
@@ -14,7 +14,7 @@
     "Fecha": "Lunes",
     "HoraIni": "9:30",
     "HoraFin": "14:00",
-    "Tipo": "Mercadillo Ecológico",
+    "Tipo": "Ecológico",
     "Imagen": "/img/Mercadillos/Imagenes/laredo.jpg"
   },
   {
@@ -23,7 +23,7 @@
     "Fecha": "Martes",
     "HoraIni": "9:00",
     "HoraFin": "13:30",
-    "Tipo": "Mercadillo Generalista",
+    "Tipo": "Generalista",
     "Imagen": "/img/Mercadillos/Imagenes/maliaño.jpg"
   },
   {
@@ -32,7 +32,7 @@
     "Fecha": "Miércoles",
     "HoraIni": "9:00",
     "HoraFin": "14:00",
-    "Tipo": "Mercadillo Generalista",
+    "Tipo": "Generalista",
     "Imagen": "/img/Mercadillos/Imagenes/noja.jpg"
   },
   {
@@ -41,7 +41,7 @@
     "Fecha": "Miércoles",
     "HoraIni": "9:00",
     "HoraFin": "14:00",
-    "Tipo": "Mercadillo Generalista",
+    "Tipo": "Generalista",
     "Imagen": "/img/Mercadillos/Imagenes/unquera.jpg"
   },
   {
@@ -50,7 +50,7 @@
     "Fecha": "Jueves",
     "HoraIni": "9:30",
     "HoraFin": "14:00",
-    "Tipo": "Mercadillo Generalista",
+    "Tipo": "Generalista",
     "Imagen": "/img/Mercadillos/Imagenes/torrelavega.jpg"
   },
   {
@@ -59,7 +59,7 @@
     "Fecha": "Jueves ",
     "HoraIni": "9:30",
     "HoraFin": "14:00",
-    "Tipo": "Mercadillo Generalista",
+    "Tipo": "Generalista",
     "Imagen": "/img/Mercadillos/Imagenes/castro_urdiales.jpg"
   },
   {
@@ -68,7 +68,7 @@
     "Fecha": "Jueves",
     "HoraIni": "9:30",
     "HoraFin": "14:00",
-    "Tipo": "Mercadillo Ecológico",
+    "Tipo": "Ecológico",
     "Imagen": "/img/Mercadillos/Imagenes/maliaño-eco.jpg"
   },
   {
@@ -77,7 +77,7 @@
     "Fecha": "Viernes",
     "HoraIni": "9:30",
     "HoraFin": "14:00",
-    "Tipo": "Mercadillo Generalista",
+    "Tipo": "Generalista",
     "Imagen": "/img/Mercadillos/Imagenes/comillas.jpg"
   },
   {
@@ -86,7 +86,7 @@
     "Fecha": "Viernes",
     "HoraIni": "9:00",
     "HoraFin": "13:30",
-    "Tipo": "Mercadillo Generalista",
+    "Tipo": "Generalista",
     "Imagen": "/img/Mercadillos/Imagenes/colindres.jpg"
   },
   {
@@ -95,7 +95,7 @@
     "Fecha": "Viernes",
     "HoraIni": "9:00",
     "HoraFin": "14:00",
-    "Tipo": "Mercadillo Generalista",
+    "Tipo": "Generalista",
     "Imagen": "/img/Mercadillos/Imagenes/saron.jpg"
   },
   {
@@ -104,7 +104,7 @@
     "Fecha": "Sábado",
     "HoraIni": "9:00",
     "HoraFin": "14:00",
-    "Tipo": "Mercadillo Generalista",
+    "Tipo": "Generalista",
     "Imagen": "/img/Mercadillos/Imagenes/ampuero.jpg"
   },
   {
@@ -113,7 +113,7 @@
     "Fecha": "Sábado",
     "HoraIni": "9:00",
     "HoraFin": "14:00",
-    "Tipo": "Mercadillo Generalista",
+    "Tipo": "Generalista",
     "Imagen": "/img/Mercadillos/Imagenes/santoña.jpg"
   },
   {
@@ -122,7 +122,7 @@
     "Fecha": "Sábado",
     "HoraIni": "11:00",
     "HoraFin": "14:00",
-    "Tipo": "Mercadillo Ecológico",
+    "Tipo": "Ecológico",
     "Imagen": "/img/Mercadillos/Imagenes/torrelavega-eco.jpg"
   },
   {
@@ -131,7 +131,7 @@
     "Fecha": "Domingo",
     "HoraIni": "9:00",
     "HoraFin": "14:00",
-    "Tipo": "Mercadillo Generalista",
+    "Tipo": "Generalista",
     "Imagen": "/img/Mercadillos/Imagenes/argoños.jpg"
   },
   {
@@ -140,7 +140,7 @@
     "Fecha": "Domingo",
     "HoraIni": "9:00",
     "HoraFin": "14:00",
-    "Tipo": "Mercadillo Generalista",
+    "Tipo": "Generalista",
     "Imagen": "/img/Mercadillos/Imagenes/lierganes.jpg"
   }
 ]

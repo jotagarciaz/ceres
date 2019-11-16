@@ -41,16 +41,20 @@ const ListItems = () => {
       <IonItem key={i} className="mercados">
         <IonGrid>
             <IonRow>
-                <IonCol size = "1">
+                <IonCol size = "2">
                     <IonAvatar className="IonImg">
                         <IonImg src={mercadillo.Imagen} alt={mercadillo.Nombre}></IonImg>
                     </IonAvatar>
                 </IonCol>
-                <IonCol size = "4">
+                <IonCol size = "3">
                     <IonLabel>{mercadillo.Nombre}</IonLabel>
                     <IonChip>
-                        <IonItem>
-                            <IonIcon slot="start" icon={pricetag} />
+                        {mercadillo.Tipo === "Generalista"
+                        &&<IonItem color="grey">
+                        && mercadillo.Tipo === "Ecológico"
+                        &&<IonItem color="red">
+                          }
+                            <IonIcon slot="start" icon={pricetag}/>
                             <IonLabel>{mercadillo.Tipo}</IonLabel>
                         </IonItem>
                     </IonChip>
